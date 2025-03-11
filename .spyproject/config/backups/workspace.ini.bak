@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['iceberg_gdfs_combine.py', 'iceberg_gdfs_combine_per_file.py', 'iceberg_gdfs_combine_sid_bergs.py', 'polars_plot_filter.py', 'clip_test.py']
+recent_files = ['iceberg_gdfs_combine.py', 'iceberg_gdfs_combine_per_file.py', 'iceberg_gdfs_combine_sid_bergs.py', 'polars_plot_filter.py', 'clip_test.py', 'all_fjords_plot.py', 'all_fjords_plot_percent_of_fjord.py']
 
 [main]
 version = 0.2.0
