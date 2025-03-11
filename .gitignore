@@ -1,3 +1,5 @@
 all_bergs_file/*
 fjord_distribution_plots/*
 percent_fjord_plot/*
+separate_fjords/*
+dataframes/*
