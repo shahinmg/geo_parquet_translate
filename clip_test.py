@@ -14,7 +14,7 @@ all_bergs_path = './all_bergs_file/greenland_iceberg_dist_2017-2021.parquet'
 fjords_path = '/media/m484s199/Sid_GDrive/FjordDistribution_GrIS/separate_fjords/seperate_fjords.shp'
 
 fjords_df = gpd.read_file(fjords_path, engine='pyogrio', use_arrow=True)
-msk =fjords_df['fjord'] == 87
+msk = fjords_df['fjord'] == 127
 serm = fjords_df[msk].dissolve()
 serm_area = serm.area / 1e6
 serm_area = serm_area[0] 
