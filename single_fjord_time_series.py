@@ -15,7 +15,7 @@ all_bergs_path = './all_bergs_file/greenland_iceberg_dist_2017-2021.parquet'
 fjords_path = './separate_fjords/seperate_fjords.shp'
 
 fjords_df = gpd.read_file(fjords_path, engine='pyogrio', use_arrow=True)
-fjord_num = 127
+fjord_num = 184
 msk = fjords_df['fjord'] == fjord_num
 fjord_geom = fjords_df[msk].dissolve()
 fjord_geom_area = fjord_geom.area / 1e6
@@ -40,4 +40,4 @@ area_text = ax.text(0.01,0.99, fr'Fjord Area: {fjord_geom_area:.0f} km$^{2}$', h
 ax.set_ylim(0,150)
 
 fig = plt.gcf()
-fig.savefig('/media/laserglaciers/upernavik/for_kristin/fjord_127_time_series.png',dpi=300)
+# fig.savefig('/media/laserglaciers/upernavik/for_kristin/fjord_127_time_series.png',dpi=300)
